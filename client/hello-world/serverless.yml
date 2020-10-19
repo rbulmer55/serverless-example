@@ -1,0 +1,15 @@
+service:
+  name: serverless-example-client
+
+provider:
+  name: aws
+  region: ${opt:region, "us-east-1"}
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: ${self:service}
+    distributionFolder: build
+    errorDocument: index.html
