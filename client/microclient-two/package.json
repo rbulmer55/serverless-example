@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "serverless client deploy --region=eu-west-1 --no-confirm"
+    "deploy": "serverless client deploy --verbose --no-confirm"
   },
   "eslintConfig": {
     "extends": "react-app"
